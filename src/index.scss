@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+body {
+  font-family: 'Raleway';
+  
+  h1 {
+    color: crimson;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 117px;
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 28px 16px;
+      color: #5ECE7B;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid #5ECE7B;
+      }
+
+      // &::after {
+      //   display: block;
+      //   content: '';
+      //   width: 140%;
+      //   margin-left: -20%;
+      //   margin-top: 32px;
+      //   height: 2px;
+      //   background-color: transparent;
+      // }
+
+      // &:hover::after{
+      //   background-color: #5ECE7B;
+        
+      // }
+    }
+  }
+}
+
+
+
+.headerSelectCurrency {
+  border: none;
+  margin-right: 22px;
+}
+
+.headerRightBlock {
+  padding: 28px 0;
+}
+
+.headerBuy {
+  padding: 28px 0;
+}
+
+.content {
+  padding: 0 101px;
+  h1 {
+    font-weight: 300;
+    font-size: 42px;
+  }
+}
+
+.card {
+  padding: 16px;
+  width: fit-content;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
