@@ -70,7 +70,7 @@ header {
   padding: 28px 0;
 }
 
-.content {
+.main {
   padding: 0 101px;
   h1 {
     font-weight: 300;
@@ -78,11 +78,182 @@ header {
   }
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
   padding: 16px;
   width: fit-content;
+  position: relative;
 }
 
 .card:hover {
   box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+.imgCover {
+  display: block;
+  background-color: rgba($color: #fff, $alpha: 0.0);
+  width: 100%;
+  height: 435px;
+  position: absolute;
+  top: 0;
+}
+
+.imgCover .out {
+  background-color: rgba($color: #fff, $alpha: 0.5);
+}
+
+.myBag {
+  visibility: visible;
+}
+
+.myBag__block {
+  position: absolute;
+  width: 325px;
+  height: 540px;
+  left: 1028px;
+  // top: 78px;
+  background: #FFFFFF;
+  z-index: 2;
+  padding: 8px 13px;
+}
+.myBag__overlay {
+  display: block;
+  content: '';
+  background-color: rgba(57, 55, 72, 0.22);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.myBag__title h3 {
+  width: 60px;
+}
+
+.myBag__item {
+  display: flex;
+  height: 137px;
+  margin: 22px 0 41px 3px;
+}
+.myBag__item-column1 {
+  width: 136px;
+}
+
+.myBag__item-column2 {
+  width: 24px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.myBag__item-btnPlus  {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0%;
+  background-color: #fff;
+
+  border: 1px solid #1D1F22;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.myBag__item-btnMinus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 0%;
+  background-color: #fff;
+
+  border: 1px solid #1D1F22;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.myBag__item-count {
+  position: absolute;
+  top: 40%;
+}
+
+.myBag__item-sizes button {
+  // position: absolute;
+  border-radius: none;
+  border: solid 1px #000;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  // left: 1044px;
+  // top: 247px;
+
+  font-family: 'Source Sans Pro';
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  align-items: center;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 27px;
+  color: #1D1F22;
+  cursor: pointer;
+}
+
+.myBag__item-column3 {
+  width: 105px;
+  height: 137px;
+  
+}
+
+.myBag__item-column3 img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.myBag__totalCost {
+  margin-top: 52px;
+}
+
+.myBag__totalCost span{
+  position: absolute;
+  right: 20px;
+  font-weight: 700;
+  
+}
+
+
+.myBag__buttons {
+  margin-top: 35px;
+}
+.myBag__buttons button {
+  padding: 13px 0;
+  width: 140px;
+  height: 43px;
+  box-sizing: border-box;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.myBag__buttonsView {
+  background: #FFFFFF;
+  border: 1px solid #1D1F22;
+}
+
+.myBag__buttonsCheck {
+  color:#fff;
+  background: #5ECE7B;
+  border: 1px solid #5ECE7B;
+}
+
+.myBag__buttons button:first-child {
+  margin-right: 12px;
 }

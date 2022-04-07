@@ -1,36 +1,29 @@
-
+import Card from './components/Card';
+import Header from './components/Header';
+import MyBag from './components/MyBag';
 
 function App() {
   return (
     <div className="wrapper">
-       <header>
-         <nav className="headerMenu">
-           <ul>
-             <li>women</li>
-             <li>men</li>
-             <li>kids</li>
-           </ul>
-         </nav>
+      <Header />
+      <MyBag />
+       
 
-         <a className="headerBuy">Buy</a>
-          <div className="headerRightBlock">
-              <select className="headerSelectCurrency">
-              <option value="$">$</option>
-              <option value="E">€ EUR</option>
-              <option value="Ph">¥ JPY</option>
-              </select>
-              <a className="headerBucket"><img src="/img/buy.png" /></a>
-          </div>
-          
-       </header>
-       <div className="content">
+       <div className="main">
           <h2>Category name</h2>
 
-          <div className="card">
-            <img src="/img/Product D.jpg" alt="cardImg" />
-            <p>Apollo Running Short</p>
-            <b>$50.00</b>
+          <div className="content">
+            <Card />
+
+            <Card />
+
+            <Card />
+
+            <Card />
+
+            
           </div>
+          
 
        </div>
     </div>
