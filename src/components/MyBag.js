@@ -1,6 +1,6 @@
 function MyBag() {
     return (
-        <div style={{display: 'block'}} className="myBag">
+        <div style={{display: 'none'}} className="myBag">
             <div className="myBag__overlay"></div>
 
             <div className="myBag__block">
