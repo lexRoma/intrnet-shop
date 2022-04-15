@@ -1,6 +1,8 @@
-function MyBag() {
+function MyBag(props) {
+    
     return (
-        <div style={{display: 'none'}} className="myBag">
+        <div  className="myBag" id="myBag">   
+            
             <div className="myBag__overlay"></div>
 
             <div className="myBag__block">
@@ -22,7 +24,7 @@ function MyBag() {
                     </div>
 
                     <div className="myBag__item-column2">
-                    <button className="myBag__item-btnPlus">+</button>
+                    <button className="myBag__item-btnPlus" onClick={props.onClick}>+</button>
                     <span className="myBag__item-count">1</span>
                     <button className="myBag__item-btnMinus">-</button>
                     </div>

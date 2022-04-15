@@ -55,6 +55,11 @@ header {
   }
 }
 
+.headerBucket {
+  background-color: transparent;
+  border: transparent ;
+}
+
 
 
 .headerSelectCurrency {
@@ -84,31 +89,15 @@ header {
   justify-content: space-between;
 }
 
-.card {
-  padding: 16px;
-  width: fit-content;
-  position: relative;
-}
 
-.card:hover {
-  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
-}
-
-.imgCover {
-  display: block;
-  background-color: rgba($color: #fff, $alpha: 0.0);
-  width: 100%;
-  height: 435px;
-  position: absolute;
-  top: 0;
-}
-
-.imgCover .out {
-  background-color: rgba($color: #fff, $alpha: 0.5);
-}
 
 .myBag {
   visibility: visible;
+  display: none;
+}
+
+.myBag.active {
+  display: block;
 }
 
 .myBag__block {

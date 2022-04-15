@@ -1,4 +1,11 @@
 function Header() {
+
+  const onClickBucket = () => {
+    document.getElementById('myBag').classList.toggle('active');
+  }
+
+
+
     return (
         <header>
          <nav className="headerMenu">
@@ -16,7 +23,10 @@ function Header() {
               <option value="E">€ EUR</option>
               <option value="Ph">¥ JPY</option>
               </select>
-              <a className="headerBucket"><img src="/img/buy.png" /></a>
+
+              <button className="headerBucket" onClick = {() => onClickBucket()}>
+                <img src="/img/buy.png" />
+              </button>
           </div>
           
        </header>
