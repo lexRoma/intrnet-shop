@@ -1,0 +1,79 @@
+.myBag__item {
+    display: flex;
+    height: 137px;
+    margin: 22px 0 41px 3px;
+}
+
+.myBag__item-column1 {
+    width: 136px;
+}
+  
+  .myBag__item-column2 {
+    width: 24px;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .myBag__item-btnPlus  {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0%;
+    background-color: #fff;
+  
+    border: 1px solid #1D1F22;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .myBag__item-btnMinus {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 0%;
+    background-color: #fff;
+  
+    border: 1px solid #1D1F22;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .myBag__item-count {
+    position: absolute;
+    top: 40%;
+  }
+  
+  .myBag__item-sizes button {
+    // position: absolute;
+    border-radius: none;
+    border: solid 1px #000;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    // left: 1044px;
+    // top: 247px;
+  
+    font-family: 'Source Sans Pro';
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    align-items: center;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 27px;
+    color: #1D1F22;
+    cursor: pointer;
+  }
+  
+  .myBag__item-column3 {
+    width: 105px;
+    height: 137px;
+    
+  }
+  
+  .myBag__item-column3 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }

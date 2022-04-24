@@ -16,7 +16,7 @@ function Header() {
            </ul>
          </nav>
 
-         <a className="headerBuy">Buy</a>
+         <a className="headerBuy"><img src="/img/bucket.png" /></a>
           <div className="headerRightBlock">
               <select className="headerSelectCurrency">
               <option value="$">$</option>

@@ -1,0 +1,13 @@
+.var {
+    width: 79px;
+    height: 80px;
+    &img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.productDetails {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,6 +1,10 @@
+import React from 'react';
 import Card from './components/Card';
 import Header from './components/Header';
 import MyBag from './components/MyBag';
+import Details from './components/Details';
+
+
 
 const items = [
   {name: 'Apollo Running Short', price: '70.00', imageUrl: "/img/Product D.jpg"},
@@ -16,9 +20,11 @@ function App() {
     <div className="wrapper">
       <Header />
       <MyBag />
+
+      
        
 
-       <div className="main">
+        <div className="main">
           <h2>Category name</h2>
 
           <div className="content">
@@ -39,7 +45,9 @@ function App() {
           </div>
           
 
-       </div>
+        </div>
+      <Details />
+        
     </div>
   );
 }
