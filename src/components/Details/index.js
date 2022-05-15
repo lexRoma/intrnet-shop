@@ -16,17 +16,38 @@ class Details extends React.Component {
           <div className="detailsImg"><img src="/img/Product D.jpg" alt="cardImg" /></div>
 
           <div className="detailsDescr">
-            <h3 className='detailsTilte'>Apollo Running Shirt</h3>
+            <h3 className='detailsTilte'><b>Apollo</b> Running Short</h3>
 
-            <div className='detailsSizesBtn'>
+            {/* <div className='detailsSizesBtn'>
               <button>XS</button>
               <button>S</button>
               <button>M</button>
               <button>L</button>
 
+            </div> */}
+            <h4 className='detailsSizeTitle'>Size:</h4>
+
+            <div class="form_radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1" />
+              <label for="radio-1">XS</label>
             </div>
             
-            <h4>Colors</h4>
+            <div class="form_radio_btn">
+              <input id="radio-2" type="radio" name="radio" value="2" />
+              <label for="radio-2">S</label>
+            </div>
+            
+            <div class="form_radio_btn">
+              <input id="radio-3" type="radio" name="radio" value="3" />
+              <label for="radio-3">M</label>
+            </div>
+
+            <div class="form_radio_btn">
+              <input id="radio-4" type="radio" name="radio" value="4" />
+              <label for="radio-4">L</label>
+            </div>
+            
+            <h4 className='detailsColorsTitle'>Colors:</h4>
 
             <div className='detailsColors'>
               <div className='detailsColorsBlock'></div>

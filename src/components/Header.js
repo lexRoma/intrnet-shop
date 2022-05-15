@@ -1,8 +1,18 @@
+import { Link } from 'react-router-dom';
+import MyBag from './MyBag';
+
 function Header() {
 
   const onClickBucket = () => {
     document.getElementById('myBag').classList.toggle('active');
   }
+
+  // const onClickLabel = (event) => {
+  //   let cardItem = document.getElementById("cardItem");
+  //   let card = document.getElementById("main");
+    
+  //   card.style.display = "block";
+  // };
 
 
 
@@ -16,7 +26,10 @@ function Header() {
            </ul>
          </nav>
 
-         <a className="headerBuy"><img src="/img/bucket.png" /></a>
+          <Link to="/">
+            <button title="Back to shop" className="headerBuy"><img alt='Back' src="/img/bucket.png" /></button>
+          </Link>
+         
           <div className="headerRightBlock">
               <select className="headerSelectCurrency">
               <option value="$">$</option>
@@ -25,8 +38,9 @@ function Header() {
               </select>
 
               <button className="headerBucket" onClick = {() => onClickBucket()}>
-                <img src="/img/buy.png" />
+                <img alt='buy' src="/img/buy.png" />
               </button>
+              <MyBag />
           </div>
           
        </header>

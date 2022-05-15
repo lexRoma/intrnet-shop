@@ -1,7 +1,17 @@
 .card {
   padding: 16px;
-  width: 32%;
+  width: 100%;
   position: relative;
+  text-decoration: none;
+  & p {
+    text-decoration: none;
+  }
+}
+
+
+
+#cardItem {
+  display: block;
 }
 
 .card img {

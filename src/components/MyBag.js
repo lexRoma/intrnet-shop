@@ -1,5 +1,5 @@
 import MyBag__item from "./MyBag__item";
-
+import { Link } from "react-router-dom";
 function MyBag(props) {
     
     return (
@@ -24,7 +24,10 @@ function MyBag(props) {
                 </div>
 
                 <div className="myBag__buttons">
-                    <button className="myBag__buttonsView">View bag</button> 
+                    <Link to="/cart">
+                        <button className="myBag__buttonsView">View bag</button> 
+                    </Link>
+                    
                     <button className="myBag__buttonsCheck">Check out</button> 
                 </div>
 

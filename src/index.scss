@@ -5,6 +5,9 @@
 body {
   margin: 0;
   font-family: system-ui;
+  & a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -72,7 +75,11 @@ header {
 }
 
 .headerBuy {
-  padding: 28px 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 48%;
 }
 
 .main {
@@ -286,6 +293,26 @@ header {
   }
 }
 
+.detailsTilte {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1D1F22;
+  margin-top: 0;
+}
+
+.detailsSizeTitle {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1D1F22;
+  margin-bottom: 0;
+}
+
 
 
 .detailsSizesBtn button {
@@ -327,6 +354,14 @@ header {
   color:#fff;
   background: #5ECE7B;
   border: 1px solid #5ECE7B;
+}
+
+.detailsColorsTitle {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .detailsColors {
@@ -388,5 +423,209 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 159.96%;
+}
+
+
+
+
+.form_radio_btn {
+	display: inline-block;
+	margin: 10px 12px 10px 0;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+  width: 63px;
+  height: 45px;
+  text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 3px 22px;
+	line-height: 34px;
+	border: 1px solid #1D1F22;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+	border-radius: 0;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: #1D1F22;
+  color: #fff;
+}
+
+
+//==================================================
+//================= Cart ===========================
+//==================================================
+.cart__page {
+  padding: 101px 100px;
+  & h4 {
+    padding-bottom: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
+
+
+.cart.active { 
+  display: block;
+}
+
+.cart__block {
+  position: absolute;
+  width: 325px;
+  height: 540px;
+  left: 1028px;
+  // top: 78px;
+  background: #FFFFFF;
+  z-index: 2;
+  padding: 8px 13px;
+}
+.cart__overlay {
+  display: block;
+  content: '';
+  background-color: rgba(57, 55, 72, 0.22);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.cart__title h3 {
+  width: 60px;
+}
+
+.cart__item {
+  display: flex;
+  height: 228px;
+  
+  border-top: 1px solid #E5E5E5;
+  width: 100%;
+  padding: 21px;
+}
+.cart__item-column1 {
+  width: 170px;
+  
+  position: relative;
+  margin-right: 68%;
+}
+
+.cart__item-column2 {
+  width: 45px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.cart__item-btnPlus  {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0%;
+  background-color: #fff;
+
+  border: 1px solid #1D1F22;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.cart__item-btnMinus {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  bottom: 0%;
+  background-color: #fff;
+
+  border: 1px solid #1D1F22;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cart__item-count {
+  position: absolute;
+  top: 40%;
+}
+
+.cart__item-sizes button {
+  // position: absolute;
+  border-radius: none;
+  border: solid 1px #000;
+  background-color: #fff;
+  width: 63px;
+  height: 45px;
+  // left: 1044px;
+  // top: 247px;
+
+  font-family: 'Source Sans Pro';
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  align-items: center;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 27px;
+  color: #1D1F22;
+  cursor: pointer;
+}
+
+
+
+.cart__item-column3 img{
+  width: 141px;
+  height: 100%;
+  object-fit:cover;
+}
+
+.cart__totalCost {
+  margin-top: 52px;
+}
+
+.cart__totalCost span{
+  position: absolute;
+  right: 20px;
+  font-weight: 700;
+  
+}
+
+
+.myBagcart__buttons {
+  margin-top: 35px;
+}
+.cart__buttons button {
+  padding: 13px 0;
+  width: 140px;
+  height: 43px;
+  box-sizing: border-box;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cart__buttonsView {
+  background: #FFFFFF;
+  border: 1px solid #1D1F22;
+}
+
+.cart__buttonsCheck {
+  color:#fff;
+  background: #5ECE7B;
+  border: 1px solid #5ECE7B;
+}
+
+.cart__buttons button:first-child {
+  margin-right: 12px;
 }
 

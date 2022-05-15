@@ -3,6 +3,12 @@ import Card from './components/Card';
 import Header from './components/Header';
 import MyBag from './components/MyBag';
 import Details from './components/Details';
+import Cart from './components/Cart';
+import { Link } from 'react-router-dom';
+
+// import { Route, Routes } from 'react-router-dom';
+
+
 
 
 
@@ -17,27 +23,34 @@ const items = [
 
 function App() {
   return (
+
+    
+    
     <div className="wrapper">
       <Header />
-      <MyBag />
+      {/* <MyBag /> */}
+
+        
 
       
        
 
-        <div className="main">
+        <div className="main" id='main'>
           <h2>Category name</h2>
 
           <div className="content">
+
             
             
             {items.map((obj) => (
+              
                <Card 
                 title={obj.name}
                 price= {obj.price}
                 imageUrl={obj.imageUrl}
                 onClick={() => console.log(obj)}
               /> 
-
+              
             ))}
             
 
@@ -46,7 +59,9 @@ function App() {
           
 
         </div>
-      <Details />
+      
+
+      
         
     </div>
   );
